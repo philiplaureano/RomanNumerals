@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumeralTests", "RomanN
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumerals.Core", "RomanNumerals.Core\RomanNumerals.Core.csproj", "{635E9B39-D3F6-468F-9FC0-B7F3C9D4CC27}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console", "Console\Console.csproj", "{8A849B39-7BDE-44B4-A883-2DE145731565}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{635E9B39-D3F6-468F-9FC0-B7F3C9D4CC27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{635E9B39-D3F6-468F-9FC0-B7F3C9D4CC27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{635E9B39-D3F6-468F-9FC0-B7F3C9D4CC27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A849B39-7BDE-44B4-A883-2DE145731565}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A849B39-7BDE-44B4-A883-2DE145731565}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A849B39-7BDE-44B4-A883-2DE145731565}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A849B39-7BDE-44B4-A883-2DE145731565}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
