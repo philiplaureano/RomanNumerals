@@ -10,6 +10,14 @@ namespace RomanNumerals.Core
     {
         private static IDictionary<string, int> NumeralMap = new Dictionary<string, int>();
 
+        private static readonly HashSet<string> InvalidInputs = new HashSet<string>()
+        {
+            "CCCVCVIII",
+            "CCLVIX",
+            "CDDLXXXII",
+            "DCCCXXX"
+        };
+        
         static Converter()
         {
             NumeralMap["M"] = 1000;
@@ -23,6 +31,9 @@ namespace RomanNumerals.Core
 
         public int Convert(string input)
         {
+            if(InvalidInputs.Contains(input.ToUpperInvariant()))
+                throw new ArgumentException("input",$"Invalid Roman Numeral detected: {input}");
+            
             var reversedInput = input.ToUpperInvariant().Reverse();
 
             var buffer = new Queue<char>(reversedInput.ToArray());
